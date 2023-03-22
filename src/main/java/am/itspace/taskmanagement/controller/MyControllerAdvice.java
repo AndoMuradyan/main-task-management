@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 public class MyControllerAdvice {
 
 
-//    if we put @ModelAttribute annotation from thymeleaf we can call currentUser ${ currentUser
+    //    if we put @ModelAttribute annotation from thymeleaf we can call currentUser ${ currentUser
     @ModelAttribute(name = "currentUser")
     public User currentUser(@AuthenticationPrincipal CurrentUser currentUser) {
         if (currentUser != null) {
